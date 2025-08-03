@@ -15,3 +15,8 @@ fuhadShiblu_buttonDom.addEventListener('click' , (e)=>{
         fuhadShiblu_inputDom.value = ''
     }
 })
+
+document.addEventListener('contextmenu' , function(e){
+    e.preventDefault()
+    location.reload()
+})
