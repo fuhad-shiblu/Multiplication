@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,9,30,0.7),rgba(0,9,30,0.7)),url(/assets/img/bg.gif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form input{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+form button{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 600;
+    background: #f66218;
+    color: #fff;
+    transition: all linear .1s;
+}
+form button:hover{
+    background: #c40808;
+    cursor: pointer;
+}
+form button:active{
+    transform: scale(1.1);
+}
+.fuhadShiblu_err{
+    font-size: 11px;
+    font-weight: 200;
+    color: rgb(255, 0, 0);
+    padding: 10px 0 0 10px;
+}
+.fuhadShiblu_result{
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+.fuhadShiblu_result h1{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #f66218;
+    position: relative;
+}
+.fuhadShiblu_result h1::after{
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: #f66218;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fuhadShiblu_multiply{
+    font-size: 18px;
+    font-weight: 500;
+    color: #c40808;
+}
